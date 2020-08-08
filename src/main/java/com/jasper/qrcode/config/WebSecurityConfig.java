@@ -91,8 +91,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
          .and()
          .authorizeRequests()
+         .antMatchers("/api/status").permitAll()
          .antMatchers("/api/authenticate").permitAll()
          .antMatchers("/api/register").permitAll()
+         .antMatchers("/api/qrcode/scan/{id}").permitAll()
          // .antMatchers("/api/register").permitAll()
          // .antMatchers("/api/activate").permitAll()
          // .antMatchers("/api/account/reset-password/init").permitAll()

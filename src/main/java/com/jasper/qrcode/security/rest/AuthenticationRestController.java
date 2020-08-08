@@ -57,7 +57,7 @@ public class AuthenticationRestController {
    @PostMapping("/register")
    public ResponseEntity<User> register(@Valid @RequestBody LoginDto loginDto) {
 	   Optional<User> userOptional = userService.getUserWithUsername(loginDto.getUsername());
-	   if(!userOptional.isEmpty()) {
+	   if(userOptional.isPresent()) {
 		  throw new CommonException(HttpStatus.BAD_REQUEST, ErrorCode.USER_EXIST);
 	   }
 	   User user = new User();

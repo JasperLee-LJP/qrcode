@@ -2,6 +2,7 @@ package com.jasper.qrcode.exception;
 
 import javax.servlet.http.HttpServletRequest;
 
+import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -28,6 +29,12 @@ public class ErrorHandler {
         ErrorResult res = new ErrorResult(404, "页面不存在");
         return new ResponseEntity<ErrorResult>(res, HttpStatus.NOT_FOUND);
     }
+    
+    @ExceptionHandler(value = EmptyResultDataAccessException.class)
+    public ResponseEntity<ErrorResult> EmptyResultDataAccessExceptionHandler(HttpServletRequest req, Exception e) throws Exception {
+    	ErrorResult res = new ErrorResult(404, "invalid data", ErrorCode.INVALID_DATA.value());
+        return new ResponseEntity<ErrorResult>(res, HttpStatus.NOT_FOUND);
+	}
 
     /**
      *  默认异常处理，前面未处理
@@ -35,6 +42,7 @@ public class ErrorHandler {
     @ExceptionHandler(value = Throwable.class)
     public ResponseEntity<ErrorResult> defaultHandler(HttpServletRequest req, Exception e) throws Exception {
 
+    	System.out.print(e);
         ErrorResult res = new ErrorResult(500, "服务器内部错误");
 
         return new ResponseEntity<ErrorResult>(res, HttpStatus.INTERNAL_SERVER_ERROR);
