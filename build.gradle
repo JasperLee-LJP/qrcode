@@ -2,7 +2,6 @@ plugins {
 	id 'org.springframework.boot' version '2.2.6.RELEASE'
 	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
 	id 'java'
-	id 'war'
 }
 
 group = 'com.jasper'
@@ -34,8 +33,6 @@ dependencies {
 	compile group: 'io.jsonwebtoken', name: 'jjwt-api', version: jwtVersion
 	runtime group: 'io.jsonwebtoken', name: 'jjwt-impl', version: jwtVersion
 	runtime group: 'io.jsonwebtoken', name: 'jjwt-jackson', version: jwtVersion
-	
-	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
 	
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
