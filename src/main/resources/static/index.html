@@ -45,7 +45,8 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right un_user">
                     <li class="section-btn"><a href="#" data-toggle="modal" data-target="#modal-form">登录</a></li>
-                    <li class="section-btn section-btn2"><a href="#" data-toggle="modal" data-target="#modal-form-register">注册</a></li>
+                    <li class="section-btn section-btn2"><a href="#" data-toggle="modal"
+                            data-target="#modal-form-register">注册</a></li>
                     <li class="section-btn section-btn3" id="visit"><a href="#">游客</a></li>
                 </ul>
             </div>
@@ -60,11 +61,12 @@
                     <div class="home-info">
                         <h1>二维码活码管理系统</h1>
                         <a href="javascript:void(0)" class="btn section-btn smoothScroll user user_name">用户</a>
-                        <a href="javascript:exit()" class="btn section-btn smoothScroll user">退出</a>
+                        <a href="javascript:exit()" style="margin-left: 20px;"
+                            class="btn section-btn smoothScroll user">退出</a>
                         <span>
-                               二维码管理系统
-                               <small>简单/高效的移动营销工具,稳定/可靠的二维码管理系统,实现二维码先印后改.</small>
-                          </span>
+                            二维码管理系统
+                            <small>简单/高效的移动营销工具,稳定/可靠的二维码管理系统,实现二维码先印后改.</small>
+                        </span>
                     </div>
                 </div>
             </div>
@@ -84,13 +86,16 @@
                     <!-- CONTACT FORM HERE -->
                     <form id="contact-form" role="form">
                         <div class="col-md-6 col-sm-12">
-                            <input type="text" class="form-control" placeholder="二维码名称(必填)" name="name" required="" id="add_name">
+                            <input type="text" class="form-control" placeholder="二维码名称(必填)" name="name" required=""
+                                id="add_name">
                         </div>
                         <div class="col-md-6 col-sm-12">
-                            <input type="text" class="form-control" placeholder="网址(必填)" name="url" required="" id="add_url">
+                            <input type="text" class="form-control" placeholder="网址(必填)" name="url" required=""
+                                id="add_url">
                         </div>
                         <div class="col-md-6 col-sm-12">
-                            <input type="text" class="form-control" placeholder="备注信息" name="info" required="" id="add_info">
+                            <input type="text" class="form-control" placeholder="备注信息" name="info" required=""
+                                id="add_info">
                         </div>
                         <div class="col-md-6 col-sm-12 address_code">
                             <select name="province" id="province">
@@ -129,16 +134,20 @@
                                 <!-- CONTACT FORM HERE -->
                                 <form role="form">
                                     <div class="col-md-3 col-sm-12">
-                                        <input type="text" class="form-control" placeholder="搜索名称" name="name" required="" id="search_name">
+                                        <input type="text" class="form-control" placeholder="搜索名称" name="name"
+                                            required="" id="search_name">
                                     </div>
                                     <div class="col-md-3 col-sm-12">
-                                        <input type="text" class="form-control" placeholder="搜索网址" name="url" required="" id="search_url">
+                                        <input type="text" class="form-control" placeholder="搜索网址" name="url"
+                                            required="" id="search_url">
                                     </div>
                                     <div class="col-md-3 col-sm-12">
-                                        <input type="text" class="form-control" placeholder="搜索地域" name="address" required="" id="search_address">
+                                        <input type="text" class="form-control" placeholder="搜索地域" name="address"
+                                            required="" id="search_address">
                                     </div>
                                     <div class="col-md-3 col-sm-12">
-                                        <input type="button" class="form-control" name="submit" value="搜索二维码" id="search_code">
+                                        <input type="button" class="form-control" name="submit" value="搜索二维码"
+                                            id="search_code">
                                     </div>
                                 </form>
                             </div>
@@ -154,18 +163,18 @@
             <div class="row">
                 <div class="col-md-12 col-sm-12">
                     <div class="footer-thumb footer-info">
-                        <h2>  jxjweb.top  </h2>
-                        <p>二维码又称二维条码,常见的二维码为QR Code,QR全称Quick Response,是一个近几年来移动设备上超流行的一种编码方式,它比传统的Bar Code条形码能存更多的信息,也能表示更多的数据类型.</p>
+                        <h2> QRCode </h2>
+                        <p>二维码又称二维条码,常见的二维码为QR Code,QR全称Quick Response,是一个近几年来移动设备上超流行的一种编码方式,它比传统的Bar
+                            Code条形码能存更多的信息,也能表示更多的数据类型.</p>
                         <p>版本 第二版 / 下版 多彩二维活码</p>
-                        <p>本网站属于示例demo,经常升级,可能会导致数据丢失,如有需要请自己下载源码部署!</p>
-                        <p><a href="https://github.com/jxj322991/2code">源代码</a></p>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
     <!-- MODAL -->
-    <section class="modal fade" id="modal-form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <section class="modal fade" id="modal-form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content modal-popup">
                 <div class="modal-header">
@@ -182,9 +191,12 @@
                                 </div>
                                 <div role="tabpanel" class="tab-pane fade in" id="sign_in">
                                     <form>
-                                        <input id="user_g" type="text" class="form-control" name="text" placeholder="用户名" autocomplete="off" required>
-                                        <input id="password_g" type="password" class="form-control" name="password" placeholder="密码" autocomplete="off" required>
-                                        <input id="login_btn" type="button" class="form-control" name="submit" value="确定">
+                                        <input id="user_g" type="text" class="form-control" name="text"
+                                            placeholder="用户名" autocomplete="off" required>
+                                        <input id="password_g" type="password" class="form-control" name="password"
+                                            placeholder="密码" autocomplete="off" required>
+                                        <input id="login_btn" type="button" class="form-control" name="submit"
+                                            value="确定">
                                         <p id="login_info" class="">
                                             输入账号密码!
                                         </p>
@@ -197,7 +209,8 @@
             </div>
         </div>
     </section>
-    <section class="modal fade" id="modal-form-register" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <section class="modal fade" id="modal-form-register" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content modal-popup">
                 <div class="modal-header">
@@ -214,12 +227,15 @@
                                 </div>
                                 <div role="tabpanel" class="tab-pane fade in" id="sign_in">
                                     <form>
-                                        <input id="user_gr" type="text" class="form-control" name="text" placeholder="用户名" autocomplete="off" required>
-                                        <input id="password_gr" type="text" class="form-control" name="password" placeholder="密码" autocomplete="off" required>
-                                        <input id="register_btn" type="button" class="form-control" name="submit" value="确定注册">
+                                        <input id="user_gr" type="text" class="form-control" name="text"
+                                            placeholder="用户名" autocomplete="off" required>
+                                        <input id="password_gr" class="form-control" type="password" name="password"
+                                            placeholder="密码" autocomplete="off" required>
+                                        <input id="register_btn" type="button" class="form-control" name="submit"
+                                            value="确定注册">
                                         <p id="register_info" class="">
                                             请务必记住账号与密码,
-                                            <br/>系统无账号密码找回选项!
+                                            <br />系统无账号密码找回选项!
                                         </p>
                                     </form>
                                 </div>
@@ -230,7 +246,8 @@
             </div>
         </div>
     </section>
-    <section class="modal fade" id="modal-form2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <section class="modal fade" id="modal-form2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content modal-popup">
                 <div class="modal-header">
@@ -247,12 +264,18 @@
                                 </div>
                                 <div role="tabpanel" class="tab-pane fade in" id="sign_in">
                                     <form>
-                                        <input type="text" id="fix_name" autocomplete="off" class="form-control" name="name" placeholder="名称(必填)" required>
-                                        <input type="text" id="fix_url" autocomplete="off" class="form-control" name="url" placeholder="路径(必填)" required>
-                                        <input type="text" id="fix_info" autocomplete="off" class="form-control" name="url" placeholder="备注信息" required>
-                                        <input type="text" id="fix_address" autocomplete="off" class="form-control" name="address" placeholder="区域" required>
-                                        <input type="button" id="fix_code" class="form-control" name="submit" value="确定">
-                                        <input type="button" id="delete_code" class="form-control" name="submit" value="删除">
+                                        <input type="text" id="fix_name" autocomplete="off" class="form-control"
+                                            name="name" placeholder="名称(必填)" required>
+                                        <input type="text" id="fix_url" autocomplete="off" class="form-control"
+                                            name="url" placeholder="路径(必填)" required>
+                                        <input type="text" id="fix_info" autocomplete="off" class="form-control"
+                                            name="url" placeholder="备注信息" required>
+                                        <input type="text" id="fix_address" autocomplete="off" class="form-control"
+                                            name="address" placeholder="区域" required>
+                                        <input type="button" id="fix_code" class="form-control" name="submit"
+                                            value="确定">
+                                        <input type="button" id="delete_code" class="form-control" name="submit"
+                                            value="删除">
                                     </form>
                                 </div>
                             </div>
@@ -262,7 +285,8 @@
             </div>
         </div>
     </section>
-    <section class="modal fade" id="modal-form3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <section class="modal fade" id="modal-form3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content modal-popup">
                 <div class="modal-header">
@@ -297,7 +321,7 @@
     <script src="js/jquery.stellar.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/smoothscroll.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="js/custom_026.js"></script>
 </body>
 
 </html>
